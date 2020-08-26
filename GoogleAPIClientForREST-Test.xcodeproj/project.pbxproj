@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -16,6 +16,7 @@
 		1B737B8824F638BE0023EE19 /* GoogleCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B737B8724F638BE0023EE19 /* GoogleCalendar.swift */; };
 		1B737B8A24F638C50023EE19 /* GoogleEventItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B737B8924F638C50023EE19 /* GoogleEventItem.swift */; };
 		75B0109BA00BEEC722248CCA /* Pods_GoogleAPIClientForREST_Test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CF7F1711C9937C3344CAC6D /* Pods_GoogleAPIClientForREST_Test.framework */; };
+		EC0CAEC224F6D849001B91E3 /* AesEverywhere in Frameworks */ = {isa = PBXBuildFile; productRef = EC0CAEC124F6D849001B91E3 /* AesEverywhere */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC0CAEC224F6D849001B91E3 /* AesEverywhere in Frameworks */,
 				75B0109BA00BEEC722248CCA /* Pods_GoogleAPIClientForREST_Test.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -116,6 +118,9 @@
 			dependencies = (
 			);
 			name = "GoogleAPIClientForREST-Test";
+			packageProductDependencies = (
+				EC0CAEC124F6D849001B91E3 /* AesEverywhere */,
+			);
 			productName = "GoogleAPIClientForREST-Test";
 			productReference = 1B737B7024F636E80023EE19 /* GoogleAPIClientForREST-Test.app */;
 			productType = "com.apple.product-type.application";
@@ -144,6 +149,9 @@
 				Base,
 			);
 			mainGroup = 1B737B6724F636E80023EE19;
+			packageReferences = (
+				EC0CAEC024F6D849001B91E3 /* XCRemoteSwiftPackageReference "aes-everywhere-swift" */,
+			);
 			productRefGroup = 1B737B7124F636E80023EE19 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -434,6 +442,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EC0CAEC024F6D849001B91E3 /* XCRemoteSwiftPackageReference "aes-everywhere-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mervick/aes-everywhere-swift.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EC0CAEC124F6D849001B91E3 /* AesEverywhere */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EC0CAEC024F6D849001B91E3 /* XCRemoteSwiftPackageReference "aes-everywhere-swift" */;
+			productName = AesEverywhere;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1B737B6824F636E80023EE19 /* Project object */;
 }
