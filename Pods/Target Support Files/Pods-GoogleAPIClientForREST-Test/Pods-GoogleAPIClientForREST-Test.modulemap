@@ -1,0 +1,6 @@
+framework module Pods_GoogleAPIClientForREST_Test {
+  umbrella header "Pods-GoogleAPIClientForREST-Test-umbrella.h"
+
+  export *
+  module * { export * }
+}
